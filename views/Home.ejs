@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-page</title>
+    <style>
+      .div-parent {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        flex-wrap: wrap;
+      }
+      img {
+        width: 200px;
+      }
+      .div-child {
+        margin: 20px 20px;
+        width: 200px;
+        background-color: rgb(196, 216, 216);
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('nav.ejs') %>
+    <div class="div-parent">
+      <% if (images) { %> <% images?.forEach(post => { %>
+
+      <div class="div-child">
+        <span><img src="<%=post?.url%> " alt="" class="post-image" /></span>
+        <p><%=post.description%></p>
+      </div>
+
+      <% }) %> <% } %>
+    </div>
+  </body>
+</html>

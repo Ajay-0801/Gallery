@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <style>
+      a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        color: black;
+      }
+      .parent {
+        background-color: aqua;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sub-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .Gallery {
+        font-size: xx-large;
+        text-align: left;
+        margin-left: 20px;
+        font-size: xx-large;
+      }
+      .child {
+        width: 70px;
+        height: 40px;
+        margin: 12px 12px;
+        background-color: Tomato;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .child:hover {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="Gallery">Gallery</div>
+      <div class="sub-parent">
+        <div class="child"><a href="/Home">Home</a></div>
+        <div class="child"><a href="/signup">Signup</a></div>
+        <div class="child"><a href="/login">Login</a></div>
+        <div class="child"><a href="/upload">upload</a></div>
+      </div>
+    </div>
+  </body>
+</html>
